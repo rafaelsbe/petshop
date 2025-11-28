@@ -8,7 +8,7 @@ const Header = ({ page, setPage, cart, user, handleLogout, isMobileMenuOpen, set
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => setPage('home')}>
           <PawPrint className="text-orange-500" size={32} />
-          <span className="text-2xl font-extrabold tracking-tight text-teal-800">Pet<span className="text-orange-500">Pals</span></span>
+          <span className="text-2xl font-extrabold tracking-tight text-teal-800">Pet<span className="text-orange-500">Hub</span></span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8 font-medium text-gray-600">

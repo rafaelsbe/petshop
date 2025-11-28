@@ -38,7 +38,7 @@ const AuthPage = ({ setUser, setPage }) => {
           <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-orange-600">
             <User size={32} />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">{isLogin ? 'Bem-vindo de Volta' : 'Junte-se ao PetPals'}</h2>
+          <h2 className="text-3xl font-bold text-gray-800">{isLogin ? 'Bem-vindo de Volta' : 'Junte-se ao PetHub'}</h2>
           <p className="text-gray-500 mt-2">
             {isLogin ? 'Faça login para acessar sua conta' : 'Crie uma conta para começar a comprar'}
           </p>
