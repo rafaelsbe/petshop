@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { PawPrint, MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = ({ setPage }) => {
@@ -7,7 +7,7 @@ const Footer = ({ setPage }) => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-             <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-4">
               <PawPrint className="text-orange-500" size={24} />
               <span className="text-xl font-bold">PetHub</span>
             </div>
@@ -35,9 +35,9 @@ const Footer = ({ setPage }) => {
           <div>
             <h4 className="font-bold mb-4 text-orange-400">Siga-nos</h4>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition-colors"><Twitter size={20} /></a>
+              <a href="$" rel="noreferrer" target='_blank' className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition-colors"><Facebook size={20} /></a>
+              <a href="&" rel="noreferrer" target='_blank' className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition-colors"><Instagram size={20} /></a>
+              <a href="&" rel="noreferrer" target='_blank' className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-orange-500 transition-colors"><Twitter size={20} /></a>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { ShoppingBag, Menu, X, PawPrint, LogOut } from 'lucide-react';
 import Button from '../Button/Button';
 
@@ -29,10 +29,10 @@ const Header = ({ page, setPage, cart, user, handleLogout, isMobileMenuOpen, set
           
           {user ? (
             <div className="flex items-center gap-3">
-               <span className="text-sm font-semibold text-teal-700 hidden lg:block">Olá, {user.email?.split('@')[0]}</span>
-               <Button onClick={handleLogout} variant="ghost" className="px-2">
-                 <LogOut size={20} />
-               </Button>
+              <span className="text-sm font-semibold text-teal-700 hidden lg:block">Olá, {user.email?.split('@')[0]}</span>
+              <Button onClick={handleLogout} variant="ghost" className="px-2">
+                <LogOut size={20} />
+              </Button>
             </div>
           ) : (
             <Button onClick={() => setPage('login')} variant="primary" className="rounded-full px-6">
@@ -48,23 +48,21 @@ const Header = ({ page, setPage, cart, user, handleLogout, isMobileMenuOpen, set
 
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 p-4 flex flex-col gap-4 shadow-lg absolute w-full z-50">
-           <button onClick={() => { setPage('home'); setIsMobileMenuOpen(false); }} className="text-left p-2 hover:bg-gray-50 rounded">Início</button>
-           <button onClick={() => { setPage('adoption'); setIsMobileMenuOpen(false); }} className="text-left p-2 hover:bg-gray-50 rounded">Adoção</button>
-           <button onClick={() => { setPage('shop'); setIsMobileMenuOpen(false); }} className="text-left p-2 hover:bg-gray-50 rounded">Loja</button>
-           <button onClick={() => { setPage('cart'); setIsMobileMenuOpen(false); }} className="text-left p-2 hover:bg-gray-50 rounded flex justify-between">
+          <button onClick={() => { setPage('home'); setIsMobileMenuOpen(false); }} className="text-left p-2 hover:bg-gray-50 rounded">Início</button>
+          <button onClick={() => { setPage('adoption'); setIsMobileMenuOpen(false); }} className="text-left p-2 hover:bg-gray-50 rounded">Adoção</button>
+          <button onClick={() => { setPage('shop'); setIsMobileMenuOpen(false); }} className="text-left p-2 hover:bg-gray-50 rounded">Loja</button>
+          <button onClick={() => { setPage('cart'); setIsMobileMenuOpen(false); }} className="text-left p-2 hover:bg-gray-50 rounded flex justify-between">
               Sacola <span className="bg-orange-100 text-orange-600 px-2 rounded-full text-sm font-bold">{cart.length}</span>
-           </button>
-           <div className="border-t border-gray-100 my-2"></div>
-           {user ? (
+          </button>
+          <div className="border-t border-gray-100 my-2"></div>
+          {user ? (
               <button onClick={() => { handleLogout(); setIsMobileMenuOpen(false); }} className="text-left p-2 text-red-500 font-bold">Sair</button>
-           ) : (
+          ) : (
               <button onClick={() => { setPage('login'); setIsMobileMenuOpen(false); }} className="text-left p-2 text-teal-600 font-bold">Entrar</button>
-           )}
+          )}
         </div>
       )}
     </header>
   );
 };
-
 export default Header;
-

@@ -89,14 +89,14 @@ const Adoption = ({ animals, addToCart, user, setPage }) => {
       {animals.length === 0 ? (
         <div className="text-center py-20 text-gray-500">Carregando animais ou nenhum animal disponível...</div>
       ) : filteredAnimals.length === 0 ? (
-         <div className="text-center py-20 bg-gray-50 rounded-lg">
+          <div className="text-center py-20 bg-gray-50 rounded-lg">
             <p className="text-xl text-gray-600 font-bold">Nenhum pet corresponde a estes filtros.</p>
             <button 
                 onClick={() => {setSpeciesFilter('all'); setGenderFilter('all'); setAgeFilter('all');}}
                 className="mt-4 text-orange-500 underline hover:text-orange-600 transition-colors">
                 Limpar todos os filtros
             </button>
-         </div>
+          </div>
       ) : (
         <CardGrid>
           {filteredAnimals.map(animal => (

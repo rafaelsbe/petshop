@@ -1,6 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import { ShoppingBag, Trash2 } from 'lucide-react';
 import Button from '../../components/Button/Button';
+
+
 
 const Cart = ({ cart, removeFromCart, total }) => (
   <div className="container mx-auto px-6 py-10 max-w-4xl animate-fade-in">
@@ -34,7 +36,7 @@ const Cart = ({ cart, removeFromCart, total }) => (
           <div className="text-xl font-bold text-gray-800">
             Total: <span className="text-orange-600">R$ {total.toFixed(2)}</span>
           </div>
-          <Button variant="primary" className="w-full sm:w-auto px-8">Finalizar Compra</Button>
+          <Button variant="primary" className="w-full sm:w-auto px-8" onClick={() => alert('Compra finalizada!')}>Finalizar Compra</Button>
         </div>
       </div>
     )}
