@@ -9,7 +9,7 @@ const Footer = ({ setPage }) => {
           <div>
              <div className="flex items-center gap-2 mb-4">
               <PawPrint className="text-orange-500" size={24} />
-              <span className="text-xl font-bold">PetPals</span>
+              <span className="text-xl font-bold">PetHub</span>
             </div>
             <p className="text-gray-400 text-sm">Fazendo rabos abanarem e corações ronronarem desde 2023. Sua loja completa para tudo que seu pet precisa.</p>
           </div>
@@ -28,7 +28,7 @@ const Footer = ({ setPage }) => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="flex items-center gap-2"><MapPin size={16} /> 123 Puppy Lane, Dogville</li>
               <li className="flex items-center gap-2"><Phone size={16} /> (555) 123-4567</li>
-              <li className="flex items-center gap-2"><Mail size={16} /> hello@petpals.com</li>
+              <li className="flex items-center gap-2"><Mail size={16} /> hello@pethub.com</li>
             </ul>
           </div>
 
@@ -43,7 +43,7 @@ const Footer = ({ setPage }) => {
         </div>
         
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>&copy; 2023 PetPals Inc. Todos os direitos reservados.</p>
+          <p>&copy; 2023 PetHub Inc. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
