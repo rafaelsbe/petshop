@@ -56,7 +56,7 @@ const Adoption = ({ animals, addToCart, user, setPage }) => {
           <select 
             value={speciesFilter}
             onChange={(e) => setSpeciesFilter(e.target.value)}
-            className="px-4 py-2 rounded-lg border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="px-5 py-2 rounded-xl bg-white shadow-sm border border-gray-300 text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500/60 focus:border-orange-500 transition-all cursor-pointer"
           >
             <option value="all">Todas as Espécies</option>
             <option value="dog">Cães</option>
@@ -66,7 +66,7 @@ const Adoption = ({ animals, addToCart, user, setPage }) => {
           <select 
             value={genderFilter}
             onChange={(e) => setGenderFilter(e.target.value)}
-            className="px-4 py-2 rounded-lg border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="px-5 py-2 rounded-xl bg-white shadow-sm border border-gray-300 text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500/60 focus:border-orange-500 transition-all cursor-pointer"
           >
             <option value="all">Qualquer Gênero</option>
             <option value="male">Macho</option>
@@ -76,7 +76,7 @@ const Adoption = ({ animals, addToCart, user, setPage }) => {
           <select 
             value={ageFilter}
             onChange={(e) => setAgeFilter(e.target.value)}
-            className="px-4 py-2 rounded-lg border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="px-5 py-2 rounded-xl bg-white shadow-sm border border-gray-300 text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500/60 focus:border-orange-500 transition-all cursor-pointer"
           >
             <option value="all">Qualquer Idade</option>
             <option value="baby">Filhote (0-1 ano)</option>
